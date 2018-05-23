@@ -72,7 +72,7 @@ void segmentCylinder(const PointCloudPtrT& cloud,
     // Obtain the cylinder inliers and coefficients
     seg.segment (*inliers_cylinder, *coefficients_cylinder);
 
-    // Write the cylinder inliers to disk
+    // Extract the cylinder and others pointclouds
     extract.setInputCloud (cloud);
     extract.setIndices (inliers_cylinder);
     extract.setNegative (false);
