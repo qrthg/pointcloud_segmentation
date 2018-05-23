@@ -191,7 +191,7 @@ class PointcloudFilter
         ros::Publisher pub1, pub2, cylinder_info;
                          
         
-        //  Callback to register with tf::MessageFilter to be called when transforms are available
+        //  Callback called when pointclouds are available
         void pointCloudMsgReceived(const sensor_msgs::PointCloud2ConstPtr& pcMsg) 
         {                
             // Convert from message to pointcloud
